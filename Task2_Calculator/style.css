@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+h3 {
+    color: #34495e;
+}
+
+.calculator {
+    background-color: #fff;
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+#display {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 95%;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1.6em;
+    margin: 5px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgba(185, 185, 185, 0.192);
+    color: black;
+}
+
+
+#operator {
+    color: rgb(20, 194, 20);
+}
+
+#clear {
+    color: #f51800;
+}
+
+#result {
+    background-color: rgb(20, 194, 20);
+    color: white;
+}
+
+
+.history {
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+}
+
+
+#historyList {
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px; 
+    overflow-y: auto;
+}
+
+#historyList li {
+    margin-bottom: 5px;
+    color: #555;
+    font-family: monospace;
+}
+
+

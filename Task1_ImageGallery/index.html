@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Gallery</h1> 
+       <div class="filters" id="filter">
+            <button class="btn" onclick="filterImages('all')">All</button>
+            <button class="btn" onclick="filterImages('portrait')">Portrait</button>
+            <button class="btn" onclick="filterImages('nature')">Nature</button>
+        </div>    
+    </header>
+    <main>
+        <section class="gallery" id="gallery">
+            <div class="gallery-item" data-category="portrait">
+                <img src="images/portrait1.webp" alt="Image 1">
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="images/portrait2.webp" alt="Image 2">
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="images/portrait3.webp" alt="Image 3">
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="images/portrait4.webp" alt="Image 4">
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="images/portrait5.webp" alt="Image 5">
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="images/portrait6.webp" alt="portrait">
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="images/portrait7.webp" alt="portrait">
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="images/portrait8.webp" alt="portrait">
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="images/portrait9.webp" alt="portrait">
+            </div>
+            <div class="gallery-item" data-category="portrait">
+                <img src="images/portrait10.webp" alt="portrait">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature1.webp" alt="nature">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature2.webp" alt="nature">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature3.webp" alt="nature">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature4.webp" alt="nature">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature5.webp" alt="nature">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature6.webp" alt="nature">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature7.webp" alt="nature">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature8.webp" alt="nature">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature9.webp" alt="nature">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="images/nature10.webp" alt="nature">
+            </div>          
+        </section>
+    </main>
+    <div id="lightbox" onclick="lightboxOut()">
+        <button id="closeBtn">×</button>
+        <button id="prevBtn">⟨</button>
+        <img id="lightbox-img" src="" alt="Lightbox view">
+        <button id="nextBtn">⟩</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
